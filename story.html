@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story | SOM UNIVERSAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500&amp;family=Space+Grotesk:wght@500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ffb4ab",
+                        "tertiary": "#d0cdcd",
+                        "on-tertiary-container": "#454544",
+                        "surface-container-highest": "#353534",
+                        "pinewood-charcoal": "#121212",
+                        "on-primary-fixed": "#241a00",
+                        "on-primary-container": "#554300",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary": "#f9ba82",
+                        "primary": "#f2ca50",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary-fixed-variant": "#574500",
+                        "tertiary-container": "#b4b2b2",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-fixed-variant": "#683d0f",
+                        "surface-container-lowest": "#0e0e0e",
+                        "inverse-primary": "#735c00",
+                        "surface-variant": "#353534",
+                        "on-tertiary": "#313030",
+                        "heritage-amber": "#FFBF00",
+                        "oxidized-bronze": "#4A4036",
+                        "luminous-white": "#F4F4F4",
+                        "surface-bright": "#3a3939",
+                        "primary-fixed-dim": "#e9c349",
+                        "tertiary-fixed": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "secondary-fixed": "#ffdcc1",
+                        "on-background": "#e5e2e1",
+                        "primary-container": "#d4af37",
+                        "primary-fixed": "#ffe088",
+                        "on-error": "#690005",
+                        "surface-tint": "#e9c349",
+                        "background": "#131313",
+                        "on-error-container": "#ffdad6",
+                        "outline-variant": "#4d4635",
+                        "outline": "#99907c",
+                        "inverse-on-surface": "#313030",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-secondary-container": "#e6a872",
+                        "error-container": "#93000a",
+                        "surface-dim": "#131313",
+                        "on-surface": "#e5e2e1",
+                        "on-primary": "#3c2f00",
+                        "surface": "#131313",
+                        "secondary-container": "#683d0f",
+                        "secondary-fixed-dim": "#f9ba82",
+                        "on-secondary": "#4c2700",
+                        "on-secondary-fixed": "#2e1500",
+                        "surface-container-low": "#1c1b1b",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container": "#201f1f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "element-overlap": "-40px",
+                        "section-gap": "160px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px",
+                        "gutter": "32px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-caps": ["Space Grotesk"],
+                        "quote-italic": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-caps": ["14px", {"lineHeight": "20px", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "quote-italic": ["24px", {"lineHeight": "36px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-shadow {
+            box-shadow: 0 0 40px -10px rgba(255, 191, 0, 0.15);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease-out;
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .backdrop-glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    
+    /* Custom Cursor Styles */
+    .cursor-dot, .cursor-outline {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    .cursor-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #FFBF00;
+    }
+    .cursor-outline {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255, 191, 0, 0.5);
+        transition: width 0.2s, height 0.2s, background-color 0.2s;
+    }
+    .cursor-outline.hover {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 191, 0, 0.1);
+        border-color: transparent;
+    }
+    @media (pointer: coarse) {
+        .cursor-dot, .cursor-outline {
+            display: none;
+        }
+    }
+\n</style>
+</head>
+<body class="bg-background text-on-background selection:bg-heritage-amber/30">\n
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-outline" id="cursor-outline"></div>
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md border-b border-white/5">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 mx-auto max-w-container-max">
+<div class="flex items-center gap-4">
+<img alt="SOM UNIVERSAL Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLuWVXhSHCMCpknUNDQLVSBkP08IJJSGfYK_97EBwXsc967tOqo3PJSyLVLpYr5Pv058eTI3DCZXxjsetjtkY5W2Uop25yc_y55YWfLB5_IeYp99Ha5SkscClCikdHMxZ3eTHCx-NiVCu2jp-XxQ9fKN9iOs9p_aO8y6pzoUjWUE5m3471rxpjDcCRKkfj7B_Hix4HqOf8YLQ4drtGOxuqEdnt4aJMs2WByELUdb8q09bvJEIDngDdvf2EI=s2048"/>
+<span class="text-headline-md font-headline-md font-semibold tracking-tighter text-on-surface">SOM UNIVERSAL</span>
+</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="collections.html">Collections</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="index.html">Material Story</a>
+<a class="text-label-caps font-label-caps text-heritage-amber border-b border-heritage-amber pb-1" href="story.html">Our Story</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="inquiry.html">Inquiry</a>
+</div>
+<button class="px-6 py-2 border border-heritage-amber text-heritage-amber text-label-caps font-label-caps hover:bg-heritage-amber hover:text-pinewood-charcoal transition-all duration-300 active:opacity-70">
+                Bespoke Commission
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background z-10"></div>
+<img alt="Pinewood Textures" class="w-full h-full object-cover scale-105 transition-transform duration-[10s] hover:scale-100" src="https://lh3.googleusercontent.com/aida/AP1WRLuUiJaWtFh6aeQDUudTFjNmNM9KXCczmwCmUhuHveDoyt5igeCwEHg75tTGSCanc1zkKb2z3Ak1lY7TMeH438dQsq1hEgXL4JsA7QXlimGbbR-6hWw0kfGmyD5KNNz9MB_RzQYs-Zl8y8LjGxVWCxg99SXWtXKSuUlHhkvHAnSl97NqIsOz2wLFnkPiWlGpCF57yFWlaFTLj-C78mhduhUujbp6AXQcT38EHXU38ZYAKioX1tNlGq2rJ3Q=s2048"/>
+</div>
+<div class="relative z-20 text-center px-margin-mobile md:px-0 max-w-4xl">
+<p class="text-label-caps font-label-caps text-heritage-amber mb-6 tracking-[0.3em] reveal-on-scroll">THE GENESIS</p>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-luminous-white mb-8 leading-tight reveal-on-scroll" style="transition-delay: 200ms;">
+                    INDIAN ROOTS,<br/>GLOBAL DREAMS
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto reveal-on-scroll" style="transition-delay: 400ms;">
+                    Revealing what exists within wood. A dialogue between the ancient spirit of mature pine and the precision of modern sculpture.
+                </p>
+<div class="mt-12 reveal-on-scroll" style="transition-delay: 600ms;">
+<span class="material-symbols-outlined text-heritage-amber animate-bounce text-4xl">keyboard_double_arrow_down</span>
+</div>
+</div>
+</section>
+<!-- The Narrative -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 reveal-on-scroll">
+<h2 class="text-label-caps font-label-caps text-heritage-amber mb-4">THE CRAFT PHILOSOPHY</h2>
+<h3 class="font-headline-lg text-headline-lg mb-10">Nature Doesn’t Repeat, Neither Do We</h3>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<p>
+                            At SOM Universal, we treat every piece of mature pine as a living chronicle. Our material exploration is not about forcing a form upon nature, but about listening to the "fingerprint" of the grain. Each knot, each variance in density, tells a story of decades spent in silence.
+                        </p>
+<p>
+                            We have pioneered a unique process where the natural resins and textures of Indian Pinewood are preserved through meticulous hand-craftsmanship. This results in sculptural objects that breathe, catching the light in ways that change throughout the day—a phenomenon we call the "Heritage Glow."
+                        </p>
+</div>
+</div>
+<div class="md:col-span-5 relative mt-16 md:mt-0 reveal-on-scroll" style="transition-delay: 300ms;">
+<div class="absolute -inset-4 bg-heritage-amber/5 rounded-full blur-3xl"></div>
+<div class="relative aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="absolute inset-0 bg-pinewood-charcoal/20 z-10"></div>
+<img alt="Raw logs in forest" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLsMoi-Xh9v67L8SBx5DUPhnfOFzxjKrbPiqPaVoKEmIkwVB-6OiSY9zdwdOq6LHNwz5KTmx00kUmWi2BUSuF2YRxyoE385mJrecHpYUCp84YfC1lc2JwJeDpnDIAstrrdBOKLUPnBeWkPP8zy_eU7WTvZ0BVnyGj6D5WZgJmr5WcTUBg-RHEdnCAxEoV0GyL1mJa1WblKAU3WVTAbQVlHQeSLzgWVkQhk_SAjl67ZAdjEq2GDDSYDWWy8c=s2048"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-highest p-8 max-w-[280px] border border-white/5 backdrop-glass hidden md:block">
+<p class="text-label-caps font-label-caps text-heritage-amber mb-2">ORIGIN</p>
+<p class="font-body-md text-body-md text-on-surface">Responsibly sourced mature pine from the heart of the Indian subcontinent.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visionary Quote -->
+<section class="bg-surface-container-lowest py-section-gap">
+<div class="max-w-4xl mx-auto px-margin-mobile text-center">
+<span class="material-symbols-outlined text-6xl text-heritage-amber/30 mb-8" data-weight="fill">format_quote</span>
+<blockquote class="font-quote-italic text-quote-italic text-on-surface italic leading-relaxed reveal-on-scroll">
+                    "Wood is not a material; it is a time capsule. Our work is to strip away the excess until the heartbeat of the forest is visible once again. Each sculpture is a collaboration between my hands and the centuries that grew the tree."
+                </blockquote>
+<div class="mt-10 flex items-center justify-center gap-4 reveal-on-scroll" style="transition-delay: 200ms;">
+<div class="h-px w-12 bg-heritage-amber"></div>
+<p class="text-label-caps font-label-caps text-heritage-amber uppercase tracking-widest">The Founder, SOM Universal</p>
+</div>
+</div>
+</section>
+<!-- The Platform -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-gutter">
+<div class="w-full md:w-1/2 reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg mb-8">A Design-Led Concept House</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        SOM Universal serves as a platform for continuous exploration. We are more than a brand; we are a laboratory of materials and processes. We invite designers and collectors to engage with us in redefining what "modern luxury" looks like when it is rooted in artisan heritage.
+                    </p>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant/20 pt-12">
+<div>
+<p class="text-headline-md font-headline-md text-heritage-amber">120+</p>
+<p class="text-label-caps font-label-caps text-on-surface-variant">Bespoke Commissions</p>
+</div>
+<div>
+<p class="text-headline-md font-headline-md text-heritage-amber">40</p>
+<p class="text-label-caps font-label-caps text-on-surface-variant">Master Artisans</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative reveal-on-scroll" style="transition-delay: 300ms;">
+<div class="h-full min-h-[400px] bg-surface-container overflow-hidden">
+<img alt="Craftsman workspace" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuUiJaWtFh6aeQDUudTFjNmNM9KXCczmwCmUhuHveDoyt5igeCwEHg75tTGSCanc1zkKb2z3Ak1lY7TMeH438dQsq1hEgXL4JsA7QXlimGbbR-6hWw0kfGmyD5KNNz9MB_RzQYs-Zl8y8LjGxVWCxg99SXWtXKSuUlHhkvHAnSl97NqIsOz2wLFnkPiWlGpCF57yFWlaFTLj-C78mhduhUujbp6AXQcT38EHXU38ZYAKioX1tNlGq2rJ3Q=s2048"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-section-gap px-margin-desktop bg-surface-dim">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-section-gap reveal-on-scroll">
+<h2 class="text-label-caps font-label-caps text-heritage-amber mb-4">OUR PROMISE</h2>
+<h3 class="font-headline-lg text-headline-lg">Why SOM Universal?</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Value 1 -->
+<div class="group p-8 border border-outline-variant/10 hover:border-heritage-amber/50 transition-all duration-500 reveal-on-scroll">
+<span class="material-symbols-outlined text-4xl text-heritage-amber mb-6">workspace_premium</span>
+<h4 class="font-headline-md text-headline-md mb-4 text-luminous-white">Handcrafted Individuality</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">No two pieces are ever the same. Each object preserves the unique structural identity of the wood it was carved from.</p>
+</div>
+<!-- Value 2 -->
+<div class="group p-8 border border-outline-variant/10 hover:border-heritage-amber/50 transition-all duration-500 reveal-on-scroll" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-4xl text-heritage-amber mb-6">wb_iridescent</span>
+<h4 class="font-headline-md text-headline-md mb-4 text-luminous-white">Signature Glow</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Our signature finishing process enhances the natural luminescence of the wood, creating an ethereal presence in any space.</p>
+</div>
+<!-- Value 3 -->
+<div class="group p-8 border border-outline-variant/10 hover:border-heritage-amber/50 transition-all duration-500 reveal-on-scroll" style="transition-delay: 400ms;">
+<span class="material-symbols-outlined text-4xl text-heritage-amber mb-6">eco</span>
+<h4 class="font-headline-md text-headline-md mb-4 text-luminous-white">Sustainable Luxury</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We prioritize ethical sourcing and low-impact artisanal processes, ensuring the forest's future while celebrating its past.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-section-gap text-center px-margin-mobile">
+<div class="max-w-2xl mx-auto reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg mb-8">Join Our Journey</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Experience the fusion of heritage craftsmanship and global design vision.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<a class="w-full md:w-auto px-10 py-4 bg-heritage-amber text-pinewood-charcoal font-label-caps text-label-caps hover:bg-luminous-white transition-colors duration-300" href="#">
+                        Explore Collections
+                    </a>
+<a class="w-full md:w-auto px-10 py-4 border border-outline text-on-surface font-label-caps text-label-caps hover:border-heritage-amber hover:text-heritage-amber transition-colors duration-300" href="#">
+                        Inquire for Commissions
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-2">
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-6">SOM UNIVERSAL</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-8">
+                    An artisan-editorial house crafting sculptural objects that honor the intersection of nature, light, and heritage.
+                </p>
+<div class="flex space-x-6">
+<a class="text-on-surface-variant hover:text-heritage-amber transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-surface-variant hover:text-heritage-amber transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div>
+<h3 class="text-label-caps font-label-caps text-heritage-amber mb-6">Collections</h3>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">Heritage Glow</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="collections.html">Collectible Objects</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="collections.html#sculptural-objects">Sculptural Objects</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="collections.html">Curved Silhouette</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-label-caps font-label-caps text-heritage-amber mb-6">Company</h3>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="story.html">Our Story</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Craft</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Press Kit</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-20 px-margin-desktop max-w-container-max mx-auto pt-8 border-t border-outline-variant/10 text-center md:text-left">
+<p class="text-label-caps font-label-caps text-on-surface-variant opacity-60">
+                © 2024 SOM Universal. Handcrafted in India, Dreamed Globally.
+            </p>
+</div>
+</footer>
+<script>
+        // Reveal on scroll logic
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-background/80', 'backdrop-blur-xl');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-background/80', 'backdrop-blur-xl');
+                header.classList.add('bg-transparent');
+            }
+        });
+    </script>
+
+    <!-- Vanilla Tilt & Cursor JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+        // Custom Cursor Logic
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorOutline = document.getElementById('cursor-outline');
+        
+        if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
+            window.addEventListener('mousemove', (e) => {
+                const posX = e.clientX;
+                const posY = e.clientY;
+                
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+                
+                // Slight delay for the outline using animate
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { duration: 500, fill: "forwards" });
+            });
+
+            // Hover effects on interactive elements
+            const interactables = document.querySelectorAll('a, button, input, select, textarea');
+            interactables.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorOutline.classList.add('hover');
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursorOutline.classList.remove('hover');
+                });
+            });
+        }
+
+        // Initialize Vanilla Tilt on image cards/groups
+        document.addEventListener('DOMContentLoaded', () => {
+            const tiltElements = document.querySelectorAll('.group, .aspect-square, .aspect-\\[4\\/5\\], .aspect-\\[3\\/4\\]');
+            if(typeof VanillaTilt !== 'undefined') {
+                VanillaTilt.init(tiltElements, {
+                    max: 3,
+                    speed: 400,
+                    glare: true,
+                    "max-glare": 0.15,
+                    scale: 1.02
+                });
+            }
+            
+            // Basic magnetic button effect for main CTAs
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                if(!btn.classList.contains('material-symbols-outlined')){
+                    btn.addEventListener('mousemove', (e) => {
+                        const rect = btn.getBoundingClientRect();
+                        const x = e.clientX - rect.left - rect.width / 2;
+                        const y = e.clientY - rect.top - rect.height / 2;
+                        btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+                    });
+                    btn.addEventListener('mouseleave', () => {
+                        btn.style.transform = 'translate(0px, 0px)';
+                        btn.style.transition = 'transform 0.3s ease';
+                    });
+                    btn.addEventListener('mouseenter', () => {
+                        btn.style.transition = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+\n</body></html>

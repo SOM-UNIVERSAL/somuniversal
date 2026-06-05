@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Heritage Glow | SOM UNIVERSAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#574500",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "secondary-container": "#683d0f",
+                        "on-secondary-container": "#e6a872",
+                        "tertiary-fixed": "#e5e2e1",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-container": "#b4b2b2",
+                        "on-secondary-fixed": "#2e1500",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#ffdcc1",
+                        "on-primary-container": "#554300",
+                        "surface-container": "#201f1f",
+                        "surface-container-high": "#2a2a2a",
+                        "on-surface-variant": "#d0c5af",
+                        "on-secondary": "#4c2700",
+                        "outline": "#99907c",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#3c2f00",
+                        "surface-variant": "#353534",
+                        "on-background": "#e5e2e1",
+                        "outline-variant": "#4d4635",
+                        "on-secondary-fixed-variant": "#683d0f",
+                        "secondary": "#f9ba82",
+                        "error-container": "#93000a",
+                        "on-tertiary": "#313030",
+                        "surface-container-highest": "#353534",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "inverse-primary": "#735c00",
+                        "secondary-fixed-dim": "#f9ba82",
+                        "luminous-white": "#F4F4F4",
+                        "surface-tint": "#e9c349",
+                        "pinewood-charcoal": "#121212",
+                        "primary-fixed": "#ffe088",
+                        "surface-dim": "#131313",
+                        "surface": "#131313",
+                        "on-tertiary-container": "#454544",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "inverse-on-surface": "#313030",
+                        "oxidized-bronze": "#4A4036",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-error": "#690005",
+                        "primary-container": "#d4af37",
+                        "inverse-surface": "#e5e2e1",
+                        "background": "#131313",
+                        "heritage-amber": "#FFBF00",
+                        "on-surface": "#e5e2e1",
+                        "primary": "#f2ca50",
+                        "on-primary-fixed": "#241a00",
+                        "tertiary": "#d0cdcd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "element-overlap": "-40px",
+                        "container-max": "1440px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "24px",
+                        "section-gap": "160px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "quote-italic": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "quote-italic": ["24px", {"lineHeight": "36px", "fontWeight": "400"}],
+                        "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "label-caps": ["14px", {"lineHeight": "20px", "letterSpacing": "0.15em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-overlay {
+            background: radial-gradient(circle at center, rgba(255, 191, 0, 0.15) 0%, transparent 70%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="font-body-md selection:bg-heritage-amber selection:text-black overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-transparent border-b border-white/5">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 mx-auto">
+<div class="flex items-center h-8">https://lh3.googleusercontent.com/aida/AP1WRLuWVXhSHCMCpknUNDQLVSBkP08IJJSGfYK_97EBwXsc967tOqo3PJSyLVLpYr5Pv058eTI3DCZXxjsetjtkY5W2Uop25yc_y55YWfLB5_IeYp99Ha5SkscClCikdHMxZ3eTHCx-NiVCu2jp-XxQ9fKN9iOs9p_aO8y6pzoUjWUE5m3471rxpjDcCRKkfj7B_Hix4HqOf8YLQ4drtGOxuqEdnt4aJMs2WByELUdb8q09bvJEIDngDdvf2EI</div>
+<div class="hidden md:flex gap-10">
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="#">Collections</a>
+<a class="text-label-caps font-label-caps text-heritage-amber border-b border-heritage-amber pb-1" href="#">Material Story</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="#">Our Story</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="#">Inquiry</a>
+</div>
+<button class="px-6 py-2 border border-heritage-amber text-heritage-amber font-label-caps text-label-caps hover:bg-heritage-amber hover:text-black transition-all duration-300">
+                Bespoke Commission
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section: The Soul of the Form -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Detailed macro of pinewood grain and amber resin" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLs21344bEgRVr4agZyyHZjgj3x6AuNPeUOFYlGVFuKCmRTwK5xH8V6O7Dpjh9gW6qfQVXMS9BBNL2IopCMVn82LNkkhJbRbfv23oMLM_63X9skDeOR3uQC-OUPHnJWPP0WS-eVWcIaxny3gmQzlH959PLF004dZTKBbHjLD1z7DXUq5U0JUvabfNlwwNNL7ReBMUvbIxnak9LFx2YVjlNJqtq6gk2PopAnItvVltiOFE-KP7xyQM0vJnHo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-0">
+<span class="font-label-caps text-label-caps text-heritage-amber tracking-[0.3em] block mb-6 animate-pulse">COLLECTIBLE OBJECTS</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-8">Heritage Glow</h1>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto text-on-surface-variant">
+                    An intersection of ancient pine narratives and modern luminescence. Handcrafted to evoke the warmth of a forest's first light.
+                </p>
+<div class="mt-12">
+<button class="material-symbols-outlined text-4xl text-heritage-amber hover:translate-y-2 transition-transform cursor-pointer">
+                        expand_more
+                    </button>
+</div>
+</div>
+<!-- Atmospheric Glow -->
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] glow-overlay opacity-50 blur-3xl pointer-events-none"></div>
+</section>
+<!-- Section 1: The Material (Asymmetric Grid) -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 relative z-10" data-aos="fade-right">
+<span class="font-label-caps text-label-caps text-heritage-amber mb-4 block">01 / THE MATERIAL</span>
+<h2 class="font-headline-lg text-headline-lg mb-8">Mature Pine &amp; Memory</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Every piece begins in the high-altitude forests of the Himalayas. We source mature pine that has weathered decades of extreme seasons, resulting in a wood grain that carries a dense, rhythmic history. 
+                    </p>
+<p class="mt-6 font-body-md text-body-md text-on-surface-variant/80">
+                        The resins are carefully pigmented to match the specific 'glow' of sunset through needle-thin leaves, creating a visual warmth that is felt as much as it is seen.
+                    </p>
+</div>
+<div class="md:col-span-7 relative group">
+<div class="relative overflow-hidden aspect-[4/5] md:aspect-[16/10]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic close-up of aged Himalayan pinewood bark with deep grooves and natural imperfections. The lighting is moody and dramatic, with a warm golden rim light highlighting the organic textures of the tree trunk in a misty, dark forest setting. Deep charcoal and amber tones dominate the palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVe_KB2mS5DB4bXVSqeuj-PZdtH2LwFWASjV9k6K17RLX_hqfkbuHKRTOyUSw4HejZnqW-FUJ_kSFoUN_hniIh_MTcpBYZ8KUxLLrNByIN5H4h739ov31X1DAhruGCAQPWGwiIjP9syZurokVqvNUAVyTfisiCdlvKYOJQRSSVgG5czaFZBhFYd2LwSyCkPn4N4Ua-a0A0he6fomiUEaOSacVUmxVj6ecUcYTgLWue_NBxLjl1gKc7ykNCjIbutJQ_qKnO-6Pvxsk"/>
+</div>
+<!-- Overlapping Detail Card -->
+<div class="hidden md:block absolute -bottom-16 -left-16 bg-surface-container p-8 border border-outline-variant/30 max-w-xs shadow-2xl">
+<span class="font-label-caps text-[10px] text-heritage-amber tracking-widest block mb-2 uppercase">Origin Profile</span>
+<p class="font-quote-italic text-quote-italic text-on-surface">"The fingerprint of nature is never repeated."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: The Craft (Bento/Editorial Layout) -->
+<section class="bg-surface-container-lowest py-section-gap">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-20 text-center md:text-left">
+<span class="font-label-caps text-label-caps text-heritage-amber mb-4 block">02 / THE CRAFT</span>
+<h2 class="font-headline-lg text-headline-lg">Precision &amp; Hand-Finishing</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Craft Step 1 -->
+<div class="space-y-6">
+<div class="aspect-square bg-pinewood-charcoal overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A artisan workshop scene showing precision laser cutting equipment interacting with raw wood blocks. Tiny glowing sparks or dust particles catch the golden light. The background is a sophisticated dark studio with organized artisan tools. High contrast with warm amber highlights on dark metal surfaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg9TGcYfyuzccJ4DHw7fl_V5QZtQ2ugBCl_405Au4mVgZCtsmm2MB88TGiF5b72S4H8_kQF88q0e-DqRYmP1aUA-z8c_Dvs7Ur9cA6DCfxbJd_GtwbunCuhj-EtcG-pzIY825O7gdcekydl3mw-2uzJK4SvRaPLF9ZksIm0LCD9-BBZM93DYZtRpmuax8fgk_olqQqbBbMNM_K-t8g2PTjU4OFXpbXuXHBdzbR7Q52N1IIECwxKru_KhWjL_bhA5a6c4e_lX_qwlI"/>
+</div>
+<h3 class="font-headline-md text-headline-md">The Cut</h3>
+<p class="text-on-surface-variant font-body-md">Utilizing state-of-the-art CNC technology for architectural precision, ensuring structural integrity while respecting the wood's organic fiber.</p>
+</div>
+<!-- Craft Step 2 -->
+<div class="space-y-6 md:translate-y-20">
+<div class="aspect-square bg-pinewood-charcoal overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of skilled hands using traditional wood finishing techniques. The hands are dusting off fine wood particles from a smooth, sculpture surface. Soft atmospheric lighting creates a sense of dedicated craftsmanship and peace. Deep shadows and glowing timber highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIs2TptLMuXPrAUug_mOjtPhfK2XoHlOf8RXVoHxYcJ3Vi4vO6r0HKdQfNBTg7GAT8B2i72eF9qFNvGs09NB_PLsQrbm3IugWD6QelQgz99dyKFfFNKjgXFX3ltcS2wJqVzmBitM5DJMzx89MbCvXEb-XgxjNUJ0zspw3iSNGEMbcXOGXAmosTfOcYNSe-AGSBbfUpMM7SJ97ZK7d7jlTqlbFEAHmTLnP0HYn7_pPCQIgrVK5l4D6mQYzRIxmXJHj9ZbUv95q-ljA"/>
+</div>
+<h3 class="font-headline-md text-headline-md">The Polish</h3>
+<p class="text-on-surface-variant font-body-md">Twelve stages of hand-sanding with progressively finer grits to achieve a tactile surface that feels like silk to the touch.</p>
+</div>
+<!-- Craft Step 3 -->
+<div class="space-y-6">
+<div class="aspect-square bg-pinewood-charcoal overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Liquid amber resin being poured into a wood void, capturing suspended air bubbles that look like stars. The scene is shot in a macro editorial style with shallow depth of field. The color palette is rich gold, honey, and deep obsidian black. The glow seems to radiate from within the liquid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn0IChS0x5uE6KtYf9omEJNIWMp2S7TFfxb_w6oUNE_UtM6l6N5Ac2FfPHi1QJlW6G-9y7YTz6GUzQ4ZwTgk90qsDGGQ080hQNU000hEfM44ZwA0pVtHdRnX_yKTUks48rwRUMN8gnps67o75g4uLOB5MkOJQF3VT1KAa0JbOM4xGe8qe80SoNM_FaJmV9_9XbaoJegHGucbvol-ujSPBj2Di6Ellx5zzMZemBfIMduq0b9T6zyRQAwPDsAuOjK3RatNJw6BUpjbc"/>
+</div>
+<h3 class="font-headline-md text-headline-md">The Infusion</h3>
+<p class="text-on-surface-variant font-body-md">Signature Heritage resin is vacuum-poured into the natural voids of the wood, permanently locking the forest's narrative in light.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: The Experience (Atmospheric) -->
+<section class="relative min-h-[80vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 bg-pinewood-charcoal">
+<img class="w-full h-full object-cover opacity-40" data-alt="A luxury minimalist penthouse living room at dusk with the Heritage Glow sculpture on a low plinth. The sculpture radiates a warm, soft amber light that reflects on the dark marble floors and textured concrete walls. The mood is one of quiet luxury, serenity, and high-end artistic living." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYh8EIGfBrraDGpFJgiiMTVUNYy9jXpLpjHeC_iJTqols2ylktSKqB-NI9arZ7WQMR4vvFfIS4CK7pdskqtGmgGnCxQz4OJLLmLnWBVtvZnq633CfCRCizZdCSdf4sPRgEzlfrik4Iz-l2XKs3uKSlddQ47Aa5f1ESMuQJdtuNtl8kAUrLtWAZwKoWtJdiut3B5P2_x-gw3afJ3NqzqjsSo-8nFGe4_NXu8nZCvPyLDQfe7iw-yf2S69fUD3p2xb96Nw02jVIlJA0"/>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="md:w-1/2">
+<span class="font-label-caps text-label-caps text-heritage-amber mb-6 block">03 / THE EXPERIENCE</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-8">A Living Presence</h2>
+<blockquote class="border-l-2 border-heritage-amber pl-8 py-4 mb-10">
+<p class="font-quote-italic text-quote-italic text-on-surface">"It doesn't just sit in a room; it transforms the space into a sanctuary."</p>
+</blockquote>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Heritage Glow reacts to the time of day. In the morning, it catches the natural light; by night, it emits a low, pulse-like warmth that anchors the atmosphere of any modern interior.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="px-10 py-4 bg-heritage-amber text-black font-label-caps text-label-caps hover:bg-white transition-colors duration-300">
+                            Inquire for Price
+                        </button>
+<button class="px-10 py-4 border border-outline text-white font-label-caps text-label-caps hover:border-heritage-amber transition-colors duration-300">
+                            View Tech Specs
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Footer / Related (Visual) -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h3 class="font-headline-lg text-headline-lg">Part of the <br/>Permanent Collection</h3>
+<a class="font-label-caps text-label-caps text-heritage-amber flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">
+                    Explore All <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A tall sculptural lighting object with curved silhouette made of charred wood and glowing blue resin details. It sits against a textured dark grey wall. The lighting is minimal and high-end editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdE485RbPtEq9qrieA_A9PnnIYKI5gCLfXFBK_5yqR-3AFzBqLwV6CPQXLk_KfMLsI71pB1a5rzX_2N9k6d1M7bzvoTPRux_JSRBuHRJJCjDC2vQdNL8BQIeIK_RCfm63lPL5eLY7fNy5PPR3QXeF0pS1H71oRNzhskb-IBrP5goIc05AKWR12mw41LnZ-5ZVk71Ml7uWwy7C9lTRhzDjllAnIpdBkIMP_i7VXtK-QAJVmBfwxM4KcZTk2IRj9HMhiCjn_A8-ElFc"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A round low coffee table featuring a top made of cross-sectioned wood pieces bonded with crystal clear resin. The table legs are oxidized bronze. Top-down artistic shot with dramatic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx2r9uDKcjftXlSJA0cle_aKKbwgXomqAXNV2HUNRk7Sz5YN5JT0dejbOe8wluoVnjbe7TUAKdR-UpBpUhSqg2d5HxQilYq_0mh1r51YPDE6UztHkfWRH34KoVRIeZGiqUfD6rHv9qwbvxuGbY62Mw0eXjiJstmzeHzEx02YbaZ-fz47NnjuA-YhduyXV_erJWw2IdDauzn0QM3DWAMy8-WzQEBliokCUv6w_hpMc_f2yYOM1ts2_4_-OPcD4WJqERrmIz4gKTmhY"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Minimalist wall sculpture piece with layered wood veneers creating an abstract topography map of a mountain range. Hidden LED lighting behind the layers creates a golden halo effect." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_tOmmKx4j9vOSUFAqqimmM-_fgSubZCmJlAztQwzLVEtzZq3OhwaB30xJNEjjr_r5sBgj5keCJZOnvJ_4pF9mdnHsMpmoFmBZxJl1Bz2TUlvVBV8M8Jg3xJUhNzkVkC_8ujYNBSZA23kb8Pk5uylMN3BSwvRRi6AXjxLl7q2757hJ_Z80mFzLtBNxL0KO8u19au7I6h9ZgqYYd6qH-SsiMSmXafegVTHVSCGBDd0B8bgCOhP2BVYqPY5ZItHSP-6rIzasKW1zBB8"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A collection of small sculptural candle holders carved from dark walnut with amber resin inlays. They are grouped together on a minimal dark wooden shelf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_Ufdug426yxMe68UZQFw_-7f09SPn-U6fSgrZ2C5iN7OChGZvwQrDiiMKNkhjzU6JrOWM2OkpOu_aXF0KxVSkSk467USW7bTgkuXJbmWusiSo5ClobJ8UlRheJLN6B5rIL4l458YDsrRTvMRzvMg6eMLC3de6laLuS7DLae5eDbhwt1nIl_FMMQLtXLoo8X61jXH7W50U4m7IhbOqsqb4ME8BATbz-YANmE4byupaV3vSRcs5ZzxZkeCbKqoNvqR-m_JfN8z-PpE"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="text-headline-lg font-headline-lg text-on-surface dark:text-on-surface mb-8">
+                    SOM UNIVERSAL
+                </div>
+<p class="font-body-md text-on-surface-variant/70">Handcrafted in India,<br/>Dreamed Globally.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-heritage-amber mb-6">Collections</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Heritage Glow</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Collectible Objects</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Sculptural Objects</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-heritage-amber mb-6">Experience</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Material Story</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Curved Silhouette</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-heritage-amber mb-6">Connect</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Bespoke Inquiry</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Craft</a></li>
+<li class="pt-4 flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-heritage-amber cursor-pointer">public</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-heritage-amber cursor-pointer">camera</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-heritage-amber cursor-pointer">mail</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-section-gap px-margin-desktop max-w-container-max mx-auto text-center border-t border-outline-variant/10 pt-12">
+<p class="font-label-caps text-[12px] text-on-surface-variant/50">© 2024 SOM Universal. Handcrafted in India, Dreamed Globally.</p>
+</div>
+</footer>
+<script>
+        // Micro-interaction: Change nav background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-background/80', 'glass-nav');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-background/80', 'glass-nav');
+                header.classList.add('bg-transparent');
+            }
+        });
+
+        // Simple Fade-in Observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+        
+        // Initial hero check
+        setTimeout(() => {
+            document.querySelector('section').classList.remove('opacity-0', 'translate-y-10');
+        }, 100);
+    </script>
+</body></html>

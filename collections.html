@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Collections | SOM UNIVERSAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Hanken+Grotesk:wght@400;500&amp;family=Space+Grotesk:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-bright": "#3a3939",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "secondary-container": "#683d0f",
+                    "on-secondary-container": "#e6a872",
+                    "tertiary-fixed": "#e5e2e1",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container-lowest": "#0e0e0e",
+                    "tertiary-container": "#b4b2b2",
+                    "on-secondary-fixed": "#2e1500",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#ffdcc1",
+                    "on-primary-container": "#554300",
+                    "surface-container": "#201f1f",
+                    "surface-container-high": "#2a2a2a",
+                    "on-surface-variant": "#d0c5af",
+                    "on-secondary": "#4c2700",
+                    "outline": "#99907c",
+                    "on-error-container": "#ffdad6",
+                    "on-primary": "#3c2f00",
+                    "surface-variant": "#353534",
+                    "on-background": "#e5e2e1",
+                    "outline-variant": "#4d4635",
+                    "on-secondary-fixed-variant": "#683d0f",
+                    "secondary": "#f9ba82",
+                    "error-container": "#93000a",
+                    "on-tertiary": "#313030",
+                    "surface-container-highest": "#353534",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "inverse-primary": "#735c00",
+                    "secondary-fixed-dim": "#f9ba82",
+                    "luminous-white": "#F4F4F4",
+                    "surface-tint": "#e9c349",
+                    "pinewood-charcoal": "#121212",
+                    "primary-fixed": "#ffe088",
+                    "surface-dim": "#131313",
+                    "surface": "#131313",
+                    "on-tertiary-container": "#454544",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "inverse-on-surface": "#313030",
+                    "oxidized-bronze": "#4A4036",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-error": "#690005",
+                    "primary-container": "#d4af37",
+                    "inverse-surface": "#e5e2e1",
+                    "background": "#131313",
+                    "heritage-amber": "#FFBF00",
+                    "on-surface": "#e5e2e1",
+                    "primary": "#f2ca50",
+                    "on-primary-fixed": "#241a00",
+                    "tertiary": "#d0cdcd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "element-overlap": "-40px",
+                    "container-max": "1440px",
+                    "margin-desktop": "80px",
+                    "margin-mobile": "24px",
+                    "section-gap": "160px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Playfair Display"],
+                    "quote-italic": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "label-caps": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "quote-italic": ["24px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "label-caps": ["14px", {"lineHeight": "20px", "letterSpacing": "0.15em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 40px rgba(255, 191, 0, 0.15);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 12px rgba(255, 191, 0, 0.3);
+        }
+        .scrim-bottom {
+            background: linear-gradient(to top, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0) 100%);
+        }
+    
+    /* Custom Cursor Styles */
+    .cursor-dot, .cursor-outline {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    .cursor-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #FFBF00;
+    }
+    .cursor-outline {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255, 191, 0, 0.5);
+        transition: width 0.2s, height 0.2s, background-color 0.2s;
+    }
+    .cursor-outline.hover {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 191, 0, 0.1);
+        border-color: transparent;
+    }
+    @media (pointer: coarse) {
+        .cursor-dot, .cursor-outline {
+            display: none;
+        }
+    }
+\n</style>
+</head>
+<body class="bg-background text-on-surface selection:bg-heritage-amber/30 selection:text-heritage-amber overflow-x-hidden">\n
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-outline" id="cursor-outline"></div>
+
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-transparent border-b border-white/5">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 mx-auto">
+<a class="text-headline-md font-headline-md font-semibold tracking-tighter text-on-surface dark:text-on-surface" href="index.html"><img alt="SOM UNIVERSAL" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLuWVXhSHCMCpknUNDQLVSBkP08IJJSGfYK_97EBwXsc967tOqo3PJSyLVLpYr5Pv058eTI3DCZXxjsetjtkY5W2Uop25yc_y55YWfLB5_IeYp99Ha5SkscClCikdHMxZ3eTHCx-NiVCu2jp-XxQ9fKN9iOs9p_aO8y6pzoUjWUE5m3471rxpjDcCRKkfj7B_Hix4HqOf8YLQ4drtGOxuqEdnt4aJMs2WByELUdb8q09bvJEIDngDdvf2EI=s2048"/></a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-label-caps font-label-caps text-heritage-amber border-b border-heritage-amber pb-1 active:opacity-70 transition-opacity" href="collections.html">Collections</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-on-surface transition-colors duration-300 active:opacity-70" href="index.html">Material Story</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-on-surface transition-colors duration-300 active:opacity-70" href="story.html">Our Story</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-on-surface transition-colors duration-300 active:opacity-70" href="inquiry.html">Inquiry</a>
+</div>
+<button class="px-6 py-2 border border-heritage-amber/50 text-heritage-amber text-label-caps font-label-caps hover:bg-heritage-amber hover:text-pinewood-charcoal transition-all duration-300">
+                Bespoke Commission
+            </button>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Header -->
+<header class="pt-48 pb-section-gap px-margin-desktop max-w-container-max mx-auto text-center reveal-up">
+<p class="font-label-caps text-label-caps text-heritage-amber mb-6 tracking-[0.3em]">CURATED ARCHIVE</p>
+<h1 class="font-display-lg text-display-lg mb-8 leading-tight">Masterpieces in <span class="italic text-heritage-amber text-glow">Wood &amp; Light</span></h1>
+<div class="w-px h-24 bg-gradient-to-b from-heritage-amber to-transparent mx-auto mt-12"></div>
+</header>
+<!-- Section: Heritage Glow -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap" id="heritage-glow">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal-up">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg mb-6">Heritage Glow Sculptures</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Luminous objects that breathe life into space. Each piece captures the warmth of timber, diffused through artisan techniques to create an atmosphere of quiet luxury.
+                    </p>
+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant border-b border-outline-variant/30 pb-2">
+                    01 — Luminous Collection
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Featured Item -->
+<div class="md:col-span-8 group relative overflow-hidden reveal-up">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-low relative">
+<img alt="" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLuUiJaWtFh6aeQDUudTFjNmNM9KXCczmwCmUhuHveDoyt5igeCwEHg75tTGSCanc1zkKb2z3Ak1lY7TMeH438dQsq1hEgXL4JsA7QXlimGbbR-6hWw0kfGmyD5KNNz9MB_RzQYs-Zl8y8LjGxVWCxg99SXWtXKSuUlHhkvHAnSl97NqIsOz2wLFnkPiWlGpCF57yFWlaFTLj-C78mhduhUujbp6AXQcT38EHXU38ZYAKioX1tNlGq2rJ3Q=s2048"/>
+<div class="absolute inset-0 scrim-bottom opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-0 left-0 p-10 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+<h3 class="font-headline-md text-headline-md text-luminous-white mb-2">The Solar Echo</h3>
+<p class="font-label-caps text-label-caps text-heritage-amber">Hand-turned Teak &amp; Amber Glow</p>
+</div>
+</div>
+<div class="mt-6 flex justify-between items-center">
+<span class="font-label-caps text-label-caps">Series HG-05</span>
+<a class="group/link flex items-center gap-2 font-label-caps text-label-caps text-heritage-amber" href="#">
+                            View Details <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Side Smaller Item -->
+<div class="md:col-span-4 group reveal-up" style="transition-delay: 100ms;">
+<div class="aspect-square overflow-hidden bg-surface-container-low mb-6">
+<img alt="" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLs21344bEgRVr4agZyyHZjgj3x6AuNPeUOFYlGVFuKCmRTwK5xH8V6O7Dpjh9gW6qfQVXMS9BBNL2IopCMVn82LNkkhJbRbfv23oMLM_63X9skDeOR3uQC-OUPHnJWPP0WS-eVWcIaxny3gmQzlH959PLF004dZTKBbHjLD1z7DXUq5U0JUvabfNlwwNNL7ReBMUvbIxnak9LFx2YVjlNJqtq6gk2PopAnItvVltiOFE-KP7xyQM0vJnHo=s2048"/>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md">Vesper Lantern</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A study in radial shadows and warm wood grains.</p>
+<a class="inline-block font-label-caps text-label-caps border-b border-heritage-amber/30 text-heritage-amber pb-1 hover:border-heritage-amber transition-colors" href="#">
+                            View Details
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Mid-Section Quote -->
+<section class="bg-surface-container-lowest py-32 mb-section-gap overflow-hidden relative">
+<div class="absolute -right-20 top-0 opacity-10 blur-3xl pointer-events-none">
+<div class="w-96 h-96 rounded-full bg-heritage-amber"></div>
+</div>
+<div class="px-margin-desktop max-w-3xl mx-auto text-center reveal-up">
+<span class="material-symbols-outlined text-heritage-amber text-4xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-quote-italic text-quote-italic text-on-surface mb-8 italic">
+                    "Wood is a living chronicle of time. Our craft is simply giving it a voice through the medium of light."
+                </blockquote>
+<cite class="font-label-caps text-label-caps text-on-surface-variant not-italic tracking-[0.2em]">SOM PRADHAN, FOUNDER</cite>
+</div>
+</section>
+<!-- Section: Sculptural Objects -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap" id="sculptural-objects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal-up">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg mb-6">Sculptural Objects</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Defying utility for pure form. These objects celebrate the raw, unpredictable textures of heritage timber and modern silhouettes.
+                    </p>
+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant border-b border-outline-variant/30 pb-2">
+                    02 — Form Collection
+                </div>
+</div>
+<!-- Asymmetric Bento-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-32">
+<!-- Item 1 -->
+<div class="group reveal-up">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-8 relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLsJiz7v81Eb8GIt7RPCSgfSMRhT3bXvVtzWVxbLRvAMZQmHu_zL9xm6rpIUmzFR-BIt8ou5evV9xHDlBtPXM3vQMQiOx0NntjXgon3SabGa9-wmN6AcRr_e2kfZ5Vh7xhukId1hWusmu-4bZ1hwulvCrxKwGqTvdIy1HAIz9uQAOogXX6j0W3epKaA8LyvjESDYBh9zovwd6-Prc2QZ_EMl5rhM6yfz0ZaB3bfFUITv7crXZKom0Z8EAjc=s2048"/>
+<div class="absolute top-6 left-6 px-4 py-1 border border-white/20 backdrop-blur-sm text-[10px] font-label-caps uppercase tracking-widest text-white">
+                            Limited Edition
+                        </div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Monolith I</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Reclaimed Indian Rosewood</p>
+</div>
+<a class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant/30 group-hover:bg-heritage-amber group-hover:border-heritage-amber transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-pinewood-charcoal">north_east</span>
+</a>
+</div>
+</div>
+<!-- Item 2 (Negative Margin Offset) -->
+<div class="group reveal-up md:mt-40" style="transition-delay: 200ms;">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-8 relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLseGSUexqCgdv9fTA8HfbyCkSxCO9WaIuUEyyvwT9ySegYDgBm9Ban31lL5ABJvv_x-GYzNhF_L5HhWnyP8YhlLGhDZDg-OEMigBXcI0fozFeUMvNbW993v3f3vFaWvYCDEPlud_m9H1kA-b1kG0iG2pWC4yIlxaoRfyalRziFKOLUNkieMn5MG8LFWRqSxth3rrqgLj79kiST4-Zq6A_zfOc6rlhYE_CBQLP_jERWBw9PFDIOqdVkGS1E=s2048"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">The Curved Totem</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Hand-carved Pinewood Sculpture</p>
+</div>
+<a class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant/30 group-hover:bg-heritage-amber group-hover:border-heritage-amber transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-pinewood-charcoal">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiry CTA -->
+<section class="mb-section-gap px-margin-mobile md:px-0">
+<div class="max-w-[1000px] mx-auto bg-surface-container-high p-12 md:p-24 text-center border border-outline-variant/10 relative overflow-hidden reveal-up">
+<div class="absolute -left-20 -bottom-20 w-64 h-64 bg-heritage-amber/5 blur-3xl rounded-full"></div>
+<h2 class="font-headline-lg text-headline-lg mb-8">Curating for your space?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl mx-auto">
+                    We offer private consultations for interior architects and collectors to find the perfect object for their specific light environment.
+                </p>
+<button class="px-12 py-4 bg-transparent border border-heritage-amber text-heritage-amber font-label-caps text-label-caps hover:bg-heritage-amber hover:text-pinewood-charcoal transition-all duration-500">
+                    REQUEST COLLECTION CATALOG
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-2">
+<div class="text-headline-lg font-headline-lg text-on-surface mb-8">SOM UNIVERSAL</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-12">
+                    Fusing the ancient soul of Indian handcraft with a minimal global design language. Each piece is a unique narrative in wood.
+                </p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-heritage-amber transition-colors" href="#"><span class="font-label-caps text-label-caps">Instagram</span></a>
+<a class="text-on-surface-variant hover:text-heritage-amber transition-colors" href="#"><span class="font-label-caps text-label-caps">LinkedIn</span></a>
+<a class="text-on-surface-variant hover:text-heritage-amber transition-colors" href="#"><span class="font-label-caps text-label-caps">Pinterest</span></a>
+</div>
+</div>
+<div class="space-y-6">
+<div class="font-label-caps text-label-caps text-heritage-amber uppercase tracking-widest">Collections</div>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">Heritage Glow Sculptures</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="collections.html">Collectible Objects</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="collections.html#sculptural-objects">Sculptural Objects</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="collections.html">Curved Silhouette Sculptures</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<div class="font-label-caps text-label-caps text-heritage-amber uppercase tracking-widest">Legal</div>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Craft</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-24 px-margin-desktop max-w-container-max mx-auto pt-8 border-t border-outline-variant/10 text-center">
+<p class="font-label-caps text-[12px] text-on-surface-variant">© 2024 SOM Universal. Handcrafted in India, Dreamed Globally.</p>
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+<script>
+        // Initialize Lenis
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smooth: true,
+        });
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
+
+        // Smooth Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-6');
+                nav.style.backgroundColor = 'rgba(19, 19, 19, 0.95)';
+            } else {
+                nav.classList.add('py-6');
+                nav.classList.remove('py-4');
+                nav.style.backgroundColor = 'transparent';
+            }
+        });
+
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Header animation
+        gsap.from("header h1, header p, header div", {
+            y: 40,
+            opacity: 0,
+            duration: 1.2,
+            stagger: 0.15,
+            ease: "power3.out",
+            delay: 0.1
+        });
+
+        // Reveal up elements
+        gsap.utils.toArray('.reveal-up').forEach(el => {
+            gsap.from(el, {
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out"
+            });
+        });
+
+        // Parallax images (exclude header)
+        gsap.utils.toArray('img').forEach(img => {
+            if (!img.closest('nav')) {
+                gsap.to(img, {
+                    scrollTrigger: {
+                        trigger: img.parentElement,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: true
+                    },
+                    y: 20,
+                    ease: "none"
+                });
+            }
+        });
+    </script>
+
+    <!-- Vanilla Tilt & Cursor JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+        // Custom Cursor Logic
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorOutline = document.getElementById('cursor-outline');
+        
+        if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
+            window.addEventListener('mousemove', (e) => {
+                const posX = e.clientX;
+                const posY = e.clientY;
+                
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+                
+                // Slight delay for the outline using animate
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { duration: 500, fill: "forwards" });
+            });
+
+            // Hover effects on interactive elements
+            const interactables = document.querySelectorAll('a, button, input, select, textarea');
+            interactables.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorOutline.classList.add('hover');
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursorOutline.classList.remove('hover');
+                });
+            });
+        }
+
+        // Initialize Vanilla Tilt on image cards/groups
+        document.addEventListener('DOMContentLoaded', () => {
+            const tiltElements = document.querySelectorAll('.group, .aspect-square, .aspect-\\[4\\/5\\], .aspect-\\[3\\/4\\]');
+            if(typeof VanillaTilt !== 'undefined') {
+                VanillaTilt.init(tiltElements, {
+                    max: 3,
+                    speed: 400,
+                    glare: true,
+                    "max-glare": 0.15,
+                    scale: 1.02
+                });
+            }
+            
+            // Basic magnetic button effect for main CTAs
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                if(!btn.classList.contains('material-symbols-outlined')){
+                    btn.addEventListener('mousemove', (e) => {
+                        const rect = btn.getBoundingClientRect();
+                        const x = e.clientX - rect.left - rect.width / 2;
+                        const y = e.clientY - rect.top - rect.height / 2;
+                        btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+                    });
+                    btn.addEventListener('mouseleave', () => {
+                        btn.style.transform = 'translate(0px, 0px)';
+                        btn.style.transition = 'transform 0.3s ease';
+                    });
+                    btn.addEventListener('mouseenter', () => {
+                        btn.style.transition = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+\n</body></html>
