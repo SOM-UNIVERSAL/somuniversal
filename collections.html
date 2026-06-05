@@ -159,30 +159,48 @@
 <div class="cursor-outline" id="cursor-outline"></div>
 
 <!-- TopAppBar -->
-<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-transparent border-b border-white/5">
-<div class="flex justify-between items-center w-full px-margin-desktop py-6 mx-auto">
-<a class="text-headline-md font-headline-md font-semibold tracking-tighter text-on-surface dark:text-on-surface" href="index.html"><img alt="SOM UNIVERSAL" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLuWVXhSHCMCpknUNDQLVSBkP08IJJSGfYK_97EBwXsc967tOqo3PJSyLVLpYr5Pv058eTI3DCZXxjsetjtkY5W2Uop25yc_y55YWfLB5_IeYp99Ha5SkscClCikdHMxZ3eTHCx-NiVCu2jp-XxQ9fKN9iOs9p_aO8y6pzoUjWUE5m3471rxpjDcCRKkfj7B_Hix4HqOf8YLQ4drtGOxuqEdnt4aJMs2WByELUdb8q09bvJEIDngDdvf2EI=s2048"/></a>
-<div class="hidden md:flex items-center gap-10">
-<a class="text-label-caps font-label-caps text-heritage-amber border-b border-heritage-amber pb-1 active:opacity-70 transition-opacity" href="collections.html">Collections</a>
-<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-on-surface transition-colors duration-300 active:opacity-70" href="index.html">Material Story</a>
-<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-on-surface transition-colors duration-300 active:opacity-70" href="story.html">Our Story</a>
-<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-on-surface transition-colors duration-300 active:opacity-70" href="inquiry.html">Inquiry</a>
+<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-transparent border-b border-white/5">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 mx-auto">
+<a href="index.html" class="flex items-center h-8"><img alt="SOM UNIVERSAL" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLuWVXhSHCMCpknUNDQLVSBkP08IJJSGfYK_97EBwXsc967tOqo3PJSyLVLpYr5Pv058eTI3DCZXxjsetjtkY5W2Uop25yc_y55YWfLB5_IeYp99Ha5SkscClCikdHMxZ3eTHCx-NiVCu2jp-XxQ9fKN9iOs9p_aO8y6pzoUjWUE5m3471rxpjDcCRKkfj7B_Hix4HqOf8YLQ4drtGOxuqEdnt4aJMs2WByELUdb8q09bvJEIDngDdvf2EI=s2048"/></a>
+<div class="hidden md:flex gap-10">
+<a class="text-label-caps font-label-caps text-heritage-amber border-b border-heritage-amber pb-1" href="collections.html">Collections</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="index.html">Material Story</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="story.html">Our Story</a>
+<a class="text-label-caps font-label-caps text-on-surface/80 hover:text-heritage-amber transition-all duration-300" href="inquiry.html">Inquiry</a>
 </div>
-<button class="px-6 py-2 border border-heritage-amber/50 text-heritage-amber text-label-caps font-label-caps hover:bg-heritage-amber hover:text-pinewood-charcoal transition-all duration-300">
+<div class="flex items-center gap-4">
+<button class="hidden md:block px-6 py-2 border border-heritage-amber text-heritage-amber font-label-caps text-label-caps hover:bg-heritage-amber hover:text-black transition-all duration-300">
                 Bespoke Commission
             </button>
+<button id="mobile-menu-btn" class="md:hidden text-heritage-amber hover:opacity-80 transition-opacity">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
 </div>
 </nav>
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-background/95 backdrop-blur-xl translate-x-full transition-transform duration-300 md:hidden flex flex-col justify-center items-center gap-8">
+<button id="close-menu-btn" class="absolute top-6 right-margin-mobile text-heritage-amber">
+    <span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<a class="text-2xl font-label-caps text-heritage-amber transition-colors" href="collections.html">Collections</a>
+<a class="text-2xl font-label-caps text-on-surface/80 hover:text-heritage-amber transition-colors" href="index.html">Material Story</a>
+<a class="text-2xl font-label-caps text-on-surface/80 hover:text-heritage-amber transition-colors" href="story.html">Our Story</a>
+<a class="text-2xl font-label-caps text-on-surface/80 hover:text-heritage-amber transition-colors" href="inquiry.html">Inquiry</a>
+<button class="mt-4 px-6 py-2 border border-heritage-amber text-heritage-amber font-label-caps text-label-caps hover:bg-heritage-amber hover:text-black transition-all">
+    Bespoke Commission
+</button>
+</div>
+</header>
 <main class="relative">
 <!-- Hero Header -->
-<header class="pt-48 pb-section-gap px-margin-desktop max-w-container-max mx-auto text-center reveal-up">
+<header class="pt-32 md:pt-48 pb-16 md:pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center reveal-up">
 <p class="font-label-caps text-label-caps text-heritage-amber mb-6 tracking-[0.3em]">CURATED ARCHIVE</p>
-<h1 class="font-display-lg text-display-lg mb-8 leading-tight">Masterpieces in <span class="italic text-heritage-amber text-glow">Wood &amp; Light</span></h1>
-<div class="w-px h-24 bg-gradient-to-b from-heritage-amber to-transparent mx-auto mt-12"></div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">Masterpieces in <span class="italic text-heritage-amber text-glow">Wood &amp; Light</span></h1>
+<div class="w-px h-16 md:h-24 bg-gradient-to-b from-heritage-amber to-transparent mx-auto mt-8 md:mt-12"></div>
 </header>
 <!-- Section: Heritage Glow -->
-<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap" id="heritage-glow">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal-up">
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16 md:mb-section-gap" id="heritage-glow">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-20 gap-8 reveal-up">
 <div class="max-w-2xl">
 <h2 class="font-headline-lg text-headline-lg mb-6">Heritage Glow Sculptures</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
@@ -227,11 +245,11 @@
 </div>
 </section>
 <!-- Mid-Section Quote -->
-<section class="bg-surface-container-lowest py-32 mb-section-gap overflow-hidden relative">
+<section class="bg-surface-container-lowest py-16 md:py-32 mb-16 md:mb-section-gap overflow-hidden relative">
 <div class="absolute -right-20 top-0 opacity-10 blur-3xl pointer-events-none">
 <div class="w-96 h-96 rounded-full bg-heritage-amber"></div>
 </div>
-<div class="px-margin-desktop max-w-3xl mx-auto text-center reveal-up">
+<div class="px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto text-center reveal-up">
 <span class="material-symbols-outlined text-heritage-amber text-4xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
 <blockquote class="font-quote-italic text-quote-italic text-on-surface mb-8 italic">
                     "Wood is a living chronicle of time. Our craft is simply giving it a voice through the medium of light."
@@ -240,8 +258,8 @@
 </div>
 </section>
 <!-- Section: Sculptural Objects -->
-<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap" id="sculptural-objects">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal-up">
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16 md:mb-section-gap" id="sculptural-objects">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-20 gap-8 reveal-up">
 <div class="max-w-2xl">
 <h2 class="font-headline-lg text-headline-lg mb-6">Sculptural Objects</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
@@ -253,7 +271,7 @@
                 </div>
 </div>
 <!-- Asymmetric Bento-style Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-16 md:gap-y-32">
 <!-- Item 1 -->
 <div class="group reveal-up">
 <div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-8 relative">
@@ -273,7 +291,7 @@
 </div>
 </div>
 <!-- Item 2 (Negative Margin Offset) -->
-<div class="group reveal-up md:mt-40" style="transition-delay: 200ms;">
+<div class="group reveal-up mt-0 md:mt-40" style="transition-delay: 200ms;">
 <div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-8 relative">
 <img alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLseGSUexqCgdv9fTA8HfbyCkSxCO9WaIuUEyyvwT9ySegYDgBm9Ban31lL5ABJvv_x-GYzNhF_L5HhWnyP8YhlLGhDZDg-OEMigBXcI0fozFeUMvNbW993v3f3vFaWvYCDEPlud_m9H1kA-b1kG0iG2pWC4yIlxaoRfyalRziFKOLUNkieMn5MG8LFWRqSxth3rrqgLj79kiST4-Zq6A_zfOc6rlhYE_CBQLP_jERWBw9PFDIOqdVkGS1E=s2048"/>
 </div>
@@ -290,8 +308,8 @@
 </div>
 </section>
 <!-- Inquiry CTA -->
-<section class="mb-section-gap px-margin-mobile md:px-0">
-<div class="max-w-[1000px] mx-auto bg-surface-container-high p-12 md:p-24 text-center border border-outline-variant/10 relative overflow-hidden reveal-up">
+<section class="mb-16 md:mb-section-gap px-margin-mobile md:px-0">
+<div class="max-w-[1000px] mx-auto bg-surface-container-high p-8 md:p-24 text-center border border-outline-variant/10 relative overflow-hidden reveal-up">
 <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-heritage-amber/5 blur-3xl rounded-full"></div>
 <h2 class="font-headline-lg text-headline-lg mb-8">Curating for your space?</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl mx-auto">
@@ -304,8 +322,8 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<footer class="w-full py-16 md:py-section-gap bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div class="md:col-span-2">
 <div class="text-headline-lg font-headline-lg text-on-surface mb-8">SOM UNIVERSAL</div>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-12">
@@ -334,7 +352,7 @@
 </ul>
 </div>
 </div>
-<div class="mt-24 px-margin-desktop max-w-container-max mx-auto pt-8 border-t border-outline-variant/10 text-center">
+<div class="mt-16 md:mt-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-8 border-t border-outline-variant/10 text-center">
 <p class="font-label-caps text-[12px] text-on-surface-variant">© 2024 SOM Universal. Handcrafted in India, Dreamed Globally.</p>
 </div>
 </footer>
@@ -418,6 +436,26 @@
         // Custom Cursor Logic
         const cursorDot = document.getElementById('cursor-dot');
         const cursorOutline = document.getElementById('cursor-outline');
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+            });
+            closeMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('translate-x-full');
+                });
+            });
+        }
         
         if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
             window.addEventListener('mousemove', (e) => {
